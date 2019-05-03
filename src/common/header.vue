@@ -5,7 +5,7 @@
         <div class="w-box">
           <div class="nav-logo">
             <h1 @click="changePage(1)">
-              <router-link to="/" title="XMall商城官网">XMall商城</router-link>
+              <router-link to="/" title="区块链平台">区块链平台</router-link>
             </h1>
           </div>
           <div class="right-box">
@@ -21,7 +21,7 @@
                 :on-icon-click="handleIconClick">
               </el-autocomplete>
               <router-link to="/goods"><a @click="changePage(2)">全部商品</a></router-link>
-              <router-link to="/thanks"><a @click="changePage(4)">捐赠</a></router-link>
+              <!-- <router-link to="/thanks"><a @click="changePage(4)">捐赠</a></router-link> -->
               <!-- <router-link to="/">Smartisan M1 / M1L</router-link>
               <router-link to="/">Smartisan OS</router-link>
               <router-link to="/">欢喜云</router-link>
@@ -137,18 +137,7 @@
                 <li>
                   <a @click="changGoods(3)" :class="{active:choosePage===3}">品牌周边</a>
                 </li>
-                <li>
-                  <router-link to="/thanks"><a @click="changePage(4)" :class="{active:choosePage===4}">捐赠名单</a></router-link>
-                </li>
-                <li>
-                  <a href="http://xmadmin.exrick.cn" target="_blank">后台管理系统</a>
-                </li>
-		            <li>
-                  <a href="http://xpay.exrick.cn" target="_blank">XPay支付系统</a>
-                </li>
-                <li>
-                  <a href="https://github.com/Exrick/xmall" target="_blank">Github</a>
-                </li>
+               
               </ul>
               <div></div>
             </div>
