@@ -1,5 +1,5 @@
 <template>
-  <!--数量-->
+  <!--天数-->
   <div class="item-cols-num clearfix">
     <div class="select">
       <span class="down"
@@ -140,7 +140,7 @@
     }
   }
 
-  /*数量*/
+  /*天数*/
   .item-cols-num {
     display: inline-block;
   }

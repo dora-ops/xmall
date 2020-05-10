@@ -1,21 +1,7 @@
 <template>
   <div class="footer">
     <div class="container">
-      <div class="siteinfo">
-        
-      <div class="copyright">
-        <h4 class="content-c2">123</h4>
-        <ul class="privacy">
-          <li class="content-c1"><a class="content-c0" @click="open1">法律声明</a></li>
-          <li class="content-c1"><a class="content-c0" @click="open2">隐私条款</a></li>
-          
-      </div>
-      <div class="cop">
-        <a class="content-c3" href="http://www.miibeian.gov.cn/" target="_blank">
-          <span class="content-c3">蜀ICP备16030308号-1</span>
-          <span class="content-c3">蜀ICP证16030308号</span>
-        </a>
-      </div>
+      
     </div>
   </div>
 </template>

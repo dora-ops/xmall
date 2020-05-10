@@ -46,7 +46,7 @@
               <div class="cart-table-title">
                 <span class="name">商品信息</span>
                 <span class="subtotal">小计</span>
-                <span class="num">数量</span>
+                <span class="num">天数</span>
                 <span class="price">单价</span>
               </div>
               <!--列表-->
@@ -70,11 +70,11 @@
                           </ul> -->
                         </div>
                       </div>
-                      <!--商品数量-->
+                      <!--商品天数-->
                       <div>
                         <!--总价格-->
                         <div class="subtotal" style="font-size: 14px">¥ {{item.salePrice * item.productNum}}</div>
-                        <!--数量-->
+                        <!--天数-->
                         <div class="item-cols-num">
                           <span v-text="item.productNum"></span>
                         </div>
@@ -525,7 +525,7 @@
         color: #666;
         line-height: 140px;
       }
-      /*数量*/
+      /*天数*/
       .subtotal,
       .item-cols-num {
         padding-top: 50px;

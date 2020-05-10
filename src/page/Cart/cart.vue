@@ -13,7 +13,7 @@
               <!--标题-->
               <div class="cart-table-title">
                 <span class="name">商品信息</span> <span class="operation">操作</span> <span
-                class="subtotal">小计</span> <span class="num">数量</span> <span class="price1">单价</span>
+                class="subtotal">小计</span> <span class="num">天数</span> <span class="price1">单价</span>
               </div>
               <!--列表-->
               <div class="cart-table" v-for="(item,i) in cartList" :key="i">
@@ -45,11 +45,11 @@
                       <div class="operation">
                         <a class="items-delete-btn" @click="cartdel(item.productId)"></a>
                       </div>
-                      <!--商品数量-->
+                      <!--商品天数-->
                       <div>
                         <!--总价格-->
                         <div class="subtotal" style="font-size: 14px">¥ {{item.salePrice * item.productNum}}</div>
-                        <!--数量-->
+                        <!--天数-->
                         <buy-num :num="item.productNum"
                                  :id="item.productId"
                                  :checked="item.checked"
@@ -85,8 +85,8 @@
               <div class="shipping">
                 <div class="shipping-box">
                   <div class="shipping-total shipping-num"><h4
-                    class="highlight">已选择 <i v-text="checkNum"></i> 件商品</h4>
-                    <h5>共计 <i v-text="totalNum"></i> 件商品</h5></div>
+                    class="highlight">已选择 <i v-text="checkNum"></i> 天</h4>
+                    <h5>共计 <i v-text="totalNum"></i> 天</h5></div>
                   <div class="shipping-total shipping-price"><h4
                     class="highlight">应付总额：<span>￥</span><i v-text="checkPrice"></i>
                   </h4>
@@ -141,7 +141,7 @@
       checkAllFlag () {
         return this.checkedCount === this.cartList.length
       },
-      // 勾选的数量
+      // 勾选的天数
       checkedCount () {
         var i = 0
         this.cartList && this.cartList.forEach((item) => {
@@ -149,7 +149,7 @@
         })
         return Number(i)
       },
-      // 计算总数量
+      // 计算总天数
       totalNum () {
         var totalNum = 0
         this.cartList && this.cartList.forEach(item => {
@@ -167,7 +167,7 @@
         })
         return totalPrice
       },
-      // 选中的商品数量
+      // 选中的商品天数
       checkNum () {
         var checkNum = 0
         this.cartList && this.cartList.forEach(item => {
@@ -228,7 +228,7 @@
           console.log('缺少所需参数')
         }
       },
-      EditNum (productNum, productId, checked) { // 数量
+      EditNum (productNum, productId, checked) { // 天数
         this._cartEdit(this.userId, productId, productNum, checked)
       },
       // 删除整条购物车

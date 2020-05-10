@@ -185,7 +185,7 @@
         })
         return totalPrice
       },
-      // 计算数量
+      // 计算天数
       totalNum () {
         var totalNum = 0
         this.cartList && this.cartList.forEach(item => {

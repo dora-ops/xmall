@@ -65,7 +65,7 @@
       <span class="name">商品信息</span>
       <div>
         <span class="price">单价</span>
-        <span class="num">数量</span>
+        <span class="num">天数</span>
         <span class="subtotal">小计</span>
       </div>
     </div>

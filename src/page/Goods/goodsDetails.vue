@@ -29,7 +29,7 @@
           </h6>
         </div>
         <div class="num">
-          <span class="params-name">数量</span>
+          <span class="params-name">天数</span>
           <buy-num @edit-num="editNum" :limit="Number(product.limitNum)"></buy-num>
         </div>
         <div class="buy">

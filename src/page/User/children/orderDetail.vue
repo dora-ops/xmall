@@ -69,7 +69,7 @@
               </div>
               <div class="f-bc">
                 <span class="price">单价</span>
-                <span class="num">数量</span>
+                <span class="num">天数</span>
                 <span class="operation">小计</span>
               </div>
             </div>
